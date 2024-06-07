@@ -8,7 +8,7 @@ from IPython.display import display
 class ClashLinux:
     def __init__(self):
         self.explanation_text_a = widgets.HTML(
-            value="<p style='color: orange;'>提示：批量转换文件，自动保存到同目录下的 __pycache__ 文件夹中</p>"
+            value="<p style='color: #00BCD4;'>提示：<a href='https://github.com/hben35096/clash-for-linux' target='_blank' style='color: #2196F3;'>如何使用？</a></p>"
         )
         
         # 分割线
