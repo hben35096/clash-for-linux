@@ -3,8 +3,21 @@
 ![image](https://github.com/hben35096/clash-for-linux/assets/139383150/6e819b34-5404-4df4-9494-c2d32cbcd24e)
 ![image](https://github.com/hben35096/clash-for-linux/assets/139383150/948c0455-29c7-4428-8f25-5011050697f3)
 ![image](https://github.com/hben35096/clash-for-linux/assets/139383150/8bbd8a55-58d8-4743-8663-ff4504c28dab)
-![image](https://github.com/hben35096/clash-for-linux/assets/139383150/94e69c2a-31f4-4cc5-a3b2-29e180d1a2af)
 
+开启全局代理
+```
+import os
+os.chdir("/root/clash-for-linux") #这里改为 clash-for-linux 所在的实际路径
+%run ui
+```
+
+开启全局代理后，需要在其他 .ipynb 文件中运行的：
+```
+import os
+os.chdir('/root/clash-for-linux')
+%run open
+```
+![image](https://github.com/hben35096/clash-for-linux/assets/139383150/94e69c2a-31f4-4cc5-a3b2-29e180d1a2af)
 
 # 下面是原项目介绍
 ### （如果上面的方法行得通，就不用看下面的内容）
