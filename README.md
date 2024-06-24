@@ -1,15 +1,14 @@
 
-![image](https://github.com/hben35096/clash-for-linux/assets/139383150/71594a60-b9d4-44b1-bd5a-b0d340d41bdb)
-![image](https://github.com/hben35096/clash-for-linux/assets/139383150/6e819b34-5404-4df4-9494-c2d32cbcd24e)
-![image](https://github.com/hben35096/clash-for-linux/assets/139383150/948c0455-29c7-4428-8f25-5011050697f3)
-![image](https://github.com/hben35096/clash-for-linux/assets/139383150/8bbd8a55-58d8-4743-8663-ff4504c28dab)
-
 开启全局代理
 ```
 import os
 os.chdir("/root/clash-for-linux") #这里改为 clash-for-linux 所在的实际路径
 %run ui
 ```
+![image](https://github.com/hben35096/clash-for-linux/assets/139383150/71594a60-b9d4-44b1-bd5a-b0d340d41bdb)
+![image](https://github.com/hben35096/clash-for-linux/assets/139383150/6e819b34-5404-4df4-9494-c2d32cbcd24e)
+![image](https://github.com/hben35096/clash-for-linux/assets/139383150/948c0455-29c7-4428-8f25-5011050697f3)
+![image](https://github.com/hben35096/clash-for-linux/assets/139383150/8bbd8a55-58d8-4743-8663-ff4504c28dab)
 
 开启全局代理后，需要在其他 .ipynb 文件中运行的：
 ```
