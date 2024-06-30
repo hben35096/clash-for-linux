@@ -71,17 +71,18 @@ class NetSpeedTest:
     def test_speed(self, b):
         with self.output:
             self.output.clear_output()  # 清空输出框内容
-            
+
             print("\n开始测速，总过程不会超出12秒，请等待测试结束后再进行其他操作，或点击“中断内核”结束当前操作")
             url = self.websites.value  # 获取用户选择的网站
             try:
                 start_time = time.time()
-                response = requests.get(url, timeout=12)  # 设置超时时间为 30 秒
+                response = requests.get(url, timeout=12)  # 设置超时时间为 12 秒
                 end_time = time.time()
                 if response.status_code == 200:
                     elapsed_time = end_time - start_time
                     speed = len(response.content) / elapsed_time / 1024 / 1024  # 将速度转换为 Mbps
                     print(f"连接到 {url} 的速度: {speed:.2f} Mb/s")
+                    print(f"响应时间: {elapsed_time:.2f} 秒")
                 else:
                     print(f"无法连接到 {url}，状态码: {response.status_code}")
             except KeyboardInterrupt:
@@ -90,7 +91,7 @@ class NetSpeedTest:
                 print(f"连接 {url} 超时")
             except Exception as e:
                 print(f"连接 {url} 时发生错误: {e}")
-            
+
             print("\n网速测试已结束！")
 
 # 创建实例
