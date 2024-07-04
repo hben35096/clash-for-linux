@@ -1,5 +1,5 @@
 # 安装
-需要在 JupyterLab 中的 .ipynb 文件中使用，先安装本项目：
+需要在 JupyterLab 中的 .ipynb 文件中使用，先安装本项目：  
 `!git clone https://github.com/hben35096/clash-for-linux`
 # 使用
 开启全局代理
